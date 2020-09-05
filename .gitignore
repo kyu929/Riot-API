@@ -1,3 +1,9 @@
+#Add .gitignore reference djangogirls
+*.pyc
+*~
+/static
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 mysite/__pycache__/
 __pycache__/
