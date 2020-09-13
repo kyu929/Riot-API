@@ -27,4 +27,5 @@ def search_result(request):
         summoner_url = "https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + str(summoner_name) 
         params = {'api_key': api_key}
         res = requests.get(summoner_url, params=params)
+##
 # Create your views here.
