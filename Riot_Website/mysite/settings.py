@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LANGUAGE_CODE = 'ko'
+
+TIME_ZONE = 'Asia/Seoul'
 
 # Application definition
 
