@@ -27,5 +27,12 @@ def search_result(request):
         summoner_url = "https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + str(summoner_name) 
         params = {'api_key': api_key}
         res = requests.get(summoner_url, params=params)
+
+        if res.status_code == requests.codes.ok:
+            summoner_exist = True
+            summoners_result = res.json()
+            if summoners_result:
+                sum_result['name'] = summoners_result['name']
+                sum_result['level'] = sum_result['summonerLevel']
 ##
 # Create your views here.
